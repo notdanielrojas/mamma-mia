@@ -13,7 +13,7 @@ export function Home() {
     <>
       <Container className='home mb-3'>
         <div className='home-body'>
-          <h1 className='fw-bold'>Pizzería Mamma Mia!</h1>
+          <h1 className='fw-bold'>Pizzería ¡Mamma Mia!</h1>
           <p>¡Tenemos las mejores pizzas que podrás encontrar!</p>
           <hr />
         </div>

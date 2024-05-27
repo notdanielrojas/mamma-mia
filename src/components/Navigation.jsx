@@ -13,7 +13,7 @@ export const Navigation = () => {
       <Container>
         <Link to={"/"} className='navegacion'>
           <img src={logo} alt='Logo Pizza' className='logo' />
-          <span>Pizzeria Mamma Mia!</span>
+          <span>Pizzería ¡Mamma Mia!</span>
         </Link>
         <div className='logo-carrito-container'>
           {" "}
