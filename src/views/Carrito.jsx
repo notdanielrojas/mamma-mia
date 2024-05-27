@@ -1,10 +1,12 @@
 import { useContext } from "react";
 import { PizzaContext } from "../context/PizzaProvider";
-import { Container } from "react-bootstrap";
+import { Container, Button } from "react-bootstrap";
 import PizzaCarrito from "../components/PizzaCarrito";
+import { useNavigate } from "react-router-dom";
 
 export const Carrito = () => {
   const { carrito } = useContext(PizzaContext);
+  const navigate = useNavigate();
   return (
     <Container className='carrito p-0 mt-3'>
       <h1 className='fs-4'>Detalle del pedido:</h1>
@@ -13,6 +15,7 @@ export const Carrito = () => {
       ) : (
         <PizzaCarrito />
       )}
+      <Button onClick={() => navigate("/")}>Volver 🍕</Button>
     </Container>
   );
 };
