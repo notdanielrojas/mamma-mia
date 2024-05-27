@@ -12,16 +12,15 @@ export const Carrito = () => {
 
   return (
     <Container className='carrito p-0 mt-3'>
-      {" "}
-      {/* Contenedor principal del carrito con padding y margen superior */}
       <h1 className='fs-4'>Detalle del pedido:</h1> {/* Título de la sección */}
       {carrito.length === 0 ? ( // Verificando si el carrito está vacío
-        <p>Aun no añades pizzas al carrito.</p> // Mensaje cuando el carrito está vacío
+        <p>Aún no has añadido pizzas al carrito.</p> // Mensaje cuando el carrito está vacío
       ) : (
         <PizzaCarrito /> // Componente para mostrar las pizzas en el carrito
       )}
-      <Button onClick={() => navigate("/")}>Volver 🍕</Button>{" "}
-      {/* Botón para volver a la página principal */}
+      {carrito.length === 0 && ( // Verifica si el carrito está vacío para renderizar el botón
+        <Button onClick={() => navigate("/")}>Volver 🍕</Button> // Botón para volver a la página principal
+      )}
     </Container>
   );
 };
