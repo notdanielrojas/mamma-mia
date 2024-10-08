@@ -58,7 +58,7 @@ export const PizzaProvider = ({ children }) => {
         carrito,
         setPizzas,
         addCarrito,
-        removeCarrito, // Agregamos removeCarrito al contexto
+        removeCarrito,
         aumentar,
         disminuir,
         monedaLocal,
